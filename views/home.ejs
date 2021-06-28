@@ -4,6 +4,6 @@
 <p><%= CONTENT %></p>
 <%POSTARRAY.forEach(function(POST){%>
   <h3><%=POST.title%></h3>
-  <p><%=POST.post.substring(0,3)%>...<a href="/posts/<%= POST.title %>">Read More</a></p>
+  <p><%=POST.content.substring(0,3)%>...<a href="/posts/<%= POST._id %>">Read More</a></p>
 <%})%>
 <%- include('partials/footer')%>
